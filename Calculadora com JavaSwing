@@ -1,0 +1,19 @@
+private void btnCalcActionPerformed(java.awt.event.ActionEvent evt) {                                        
+        // TODO add your handling code here:
+        int num = Integer.parseInt(txtNum.getValue().toString());
+        //Calculo da divisão por 2\\
+        int res = num%2;
+        lblResto.setText(Integer.toString(res));
+        //Elevado ao Cubo//
+        double c = Math.pow(num, 3);
+        lblCubo.setText(Double.toString(c));
+        //Raiz Quadrada//
+        double rq = Math.sqrt(num);
+        lblRaizQ.setText(Double.toString(rq));
+        //Raiz ao Cubo//
+        double rc = Math.cbrt(num);
+        lblRaizC.setText(Double.toString(rc));
+        //Valor absoluto//
+        int abs = Math.abs(num);
+        lblVb.setText(Integer.toString(abs));
+       PanCalc.setVisible(true);
