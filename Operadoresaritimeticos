@@ -1,0 +1,15 @@
+package operadoresaritimeticos;
+
+
+public class Operadoresaritimeticos {
+
+    
+    public static void main(String[] args) {
+        int N1 = 3;
+        int N2 = 5;
+        float M = (N1+N2)/2;
+                System.out.println("A media é" + M);
+
+ }
+    
+}
