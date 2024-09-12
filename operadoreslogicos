@@ -1,0 +1,42 @@
+package operadoreslogicos;
+
+/**
+ *
+ * @author EU
+ */
+public class OperadoresLogicos {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+
+      // 1° exercicio//
+
+        int x,y,z;
+        x = 4;
+        z = 12;
+        y = 7;
+        boolean r;
+        r = (x<y && y<z)?true:false;
+        System.out.println(r);
+
+// 2° exercicio//
+
+  int x,y,z;
+        x = 6;
+        z = 12;
+        y = 10;
+        boolean r;
+        r = (x<y || y<z)?true:false;
+        System.out.println(r);
+
+//3° exercicio//
+
+  int x,y,z;
+        x = 6;
+        z = 12;
+        y = 14;
+        boolean r;
+        r = (x<y ^ y<z)?true:false;
+        System.out.println(r);
