@@ -1,0 +1,24 @@
+package par.ou.impar;
+
+import java.util.Scanner;
+
+public class PAROuIMPAR {
+
+    public static void main(String[] args) {
+      
+        Scanner teclado = new Scanner (System.in);
+        System.out.println("PAR ou IMPAR");
+        System.out.println("------------------------");
+        System.out.println("Informe um numero: ");
+        int n1 = teclado.nextInt();
+        if(n1%2==0){
+            System.out.println("Este numero é PAR");
+            
+        }
+        else{
+            System.out.println("Este numero é IMPAR");
+        }
+        
+    }
+    
+}
