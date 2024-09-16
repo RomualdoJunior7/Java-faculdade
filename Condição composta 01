@@ -1,0 +1,31 @@
+package condicaosimples02;
+
+import java.util.Scanner;
+
+public class Condicaosimples02 {
+
+    public static void main(String[] args) {
+       
+        Scanner teclado = new Scanner(System.in);
+
+        System.out.println("-----------------------------");
+        System.out.println("A U T O  E S C O L A RJ");
+        System.out.println("Boa tarde, sr(a). ");
+        System.out.print("Inicie seu atendimento repondo esta pergunta!");
+       
+         System.out.println("Digite sua idade: ");
+        int idade = teclado.nextInt();
+        if (idade >= 18){
+            System.out.println("Pode inscreve-se na Auto escola");
+        }
+        else{ 
+            System.out.println("Nao, esta apto a pratica!");
+            
+        System.out.println("-----------------------------");
+        }
+        
+        
+        
+    }
+    
+}
