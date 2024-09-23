@@ -1,0 +1,25 @@
+package contador._de_cambalhotas;
+import java.util.Scanner;
+
+public class Contador_de_cambalhotas {
+
+  
+    public static void main(String[] args) {
+       
+        Scanner teclado = new Scanner(System.in);
+        int cc = 0;
+        while (cc<=10){
+             cc++;
+             if(cc == 3 && cc == 6){
+                 continue;
+             }
+             if(cc == 8){
+                 break;
+             }
+             int C = cc;
+            System.out.println("Cambalhota"+ cc);
+            System.out.println("Total de cambalhotas foi:" + C);
+ }
+        
+        
+    }
