@@ -1,0 +1,29 @@
+package vetores.pkg02;
+import java.util.Scanner;
+public class Vetores02 {
+
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+        System.out.println("Em qual ano estamos:");
+        String mes[]= {"jan","fev","mar","abr","maio","jun",
+                "jul","ago","set","out","nov","dez"};
+        int tot[]= {31, 28, 31, 30, 31, 30, 31, 
+                 31, 30, 31, 30, 31};
+        int ano = teclado.nextInt();
+        
+        boolean bissexto = (ano % 4 == 0 && ano % 100 != 0)
+                || (ano % 400 == 0);
+        if (bissexto) {
+            tot[1] = 29;  // tot 1, porque começa a contar do 0//
+        }
+             for (int c = 0; c < mes.length; c++) {
+            System.out.println("O mes de " + mes[c] + " tem " 
+                    + tot[c] + " dias ao todo.");
+             }
+              if (bissexto) {
+            System.out.println("O ano " + ano + " e bissexto.");
+        } else {
+            System.out.println("O ano " + ano + " nao e bissexto.");
+        }
+    }
+}
