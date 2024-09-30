@@ -1,0 +1,14 @@
+package vetores;
+
+public class Vetores {
+
+    public static void main(String[] args) {
+       int n[]= {1,4,5,7,8,23};
+         System.out.println("O total de Casa de N e: " + n.length);
+            for( int c = 0; c <=5; c++){
+              System.out.println("Na posicao "+ c +
+                " temos o valor: " + n[c]);
+    }
+    
+}
+}
