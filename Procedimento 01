@@ -1,0 +1,19 @@
+package procedimento;
+
+import java.util.Scanner;
+
+public class Procedimento {
+
+    static void soma (int a, int b){
+        int soma = a + b;
+        System.out.println("A soma e: " + soma);
+ 
+    }
+    public static void main(String[] args) {
+       
+        Scanner teclado = new Scanner(System.in);
+        System.out.println("comecou o programa");
+     soma(5,2);
+    }
+    
+}
